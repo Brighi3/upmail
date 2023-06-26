@@ -12,7 +12,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
 
-        if username == 'michele.avaltroni@libero.it' and password == '1234':
+        if username == '' and password == '':
             # Genera casualmente la OTP
             otp = generate_otp()
 
@@ -52,10 +52,10 @@ def send_otp_email(email, otp):
     # Implementa qui il codice per inviare l'OTP all'indirizzo email specificato
     # Esempio: utilizzo di una stampa di log per simulare l'invio dell'email
     # Configurazione delle informazioni del server SMTP
-    smtp_host = 'smtp.gmail.com'
+    smtp_host = ''
     smtp_port = 587
-    smtp_username = 'brighetto93@gmail.com'
-    smtp_password = 'bpjstbvadmntbcne'
+    smtp_username = ''
+    smtp_password = ''
 
     # Creazione del messaggio email
     message = MIMEText(f"La tua One Time Password (OTP) è: {otp}")
