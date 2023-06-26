@@ -1,9 +1,6 @@
 
 
-# Nome del Progetto
-
-Login a 2 fattori di autenticazione
-
+# Login a 2 fattori di autenticazione
 Il programma è un'applicazione web basata su Flask che implementa un sistema di autenticazione utilizzando username, password e una One-Time Password (OTP). 
 L'obiettivo è verificare l'identità dell'utente richiedendo username e password, inviare un codice OTP all'indirizzo email specificato e successivamente verificare anche il codice OTP inserito dall'utente per 
 concedere l'accesso.
